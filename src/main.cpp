@@ -3,8 +3,10 @@ Servo MYSERVO;
 int trigPin = 9;
 int echoPin = 10;
 void setup() {
-// write your initialization code here
-}
+    pinMode(trigPin,OUTPUT);
+    pinMode(echoPin,INPUT);
+    MYSERVO.attach(5);
+    Serial.begin(9600);}
 
 
 void loop() {
